@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="CSS/style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <style>
+      body {
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      .topnav {
+        overflow: hidden;
+        background-color: #333;
+      }
+
+      .topnav a {
+        float: left;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+      }
+
+      .topnav a:hover {
+        background-color: #ddd;
+        color: black;
+      }
+
+      .topnav a.active {
+        background-color: #6d0081;
+        color: white;
+      }
+
+      .content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+      }
+
+      .text {
+        margin-bottom: 20px;
+      }
+
+      .text h1 {
+        margin: 0;
+        font-size: 24px;
+      }
+
+      .text p {
+        margin-top: 10px;
+      }
+
+      .image-container {
+        display: flex;
+        justify-content: center; /* Aligns the images horizontally */
+        gap: 20px; /* Adds space between images */
+        position: relative; /* Allows absolute positioning of figcaptions */
+      }
+
+      .image-container figure {
+        position: relative; /* Set position for the figure */
+      }
+
+      .image-container img {
+        width: 300px;
+        height: 250px;
+      }
+
+      .image-container figcaption {
+        position: absolute;
+        top: 0; /* Adjust to position above the image */
+        left: 0; /* Adjust to center horizontally */
+        right: 0; /* Stretch to the right */
+        text-align: center; /* Center the text */
+        color: white; /* Text color */
+        background: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+        padding: 5px; /* Padding around text */
+      }
+
+      .skip-link {
+        position: absolute;
+        left: -9999px; /* Hide off-screen */
+      }
+
+      .skip-link:focus {
+        left: 0; /* Bring into view when focused */
+        top: 0;
+        background: #333;
+        color: white;
+        padding: 8px;
+        z-index: 1000;
+      }
+    </style>
+  </head>
+  <body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    <header role="banner">
+      <div class="topnav" role="navigation" aria-label="Main navigation">
+        <a class="active" href="index.html">Home</a>
+        <a href="More.html">More</a>
+      </div>
+      <h1 style="text-align: center">Treaty 1</h1>
+      <hr />
+    </header>
+    <main id="main-content">
+      <h1>Where was the Treaty negotiated?</h1>
+      <p>The Treaty was signed at Lower Fort Garry in Manitoba.</p>
+      <p>It was signed on August 3, 1871.</p>
+      <div class="image-container">
+        <figure>
+          <img
+            src="Images/Fort gary.jfif"
+            alt="Fort Garry, a historic site in Manitoba" />
+          <figcaption>
+            <a href="https://www.metismuseum.ca/resource.php/01748"
+              >Fort Garry</a
+            >
+          </figcaption>
+        </figure>
+        <figure>
+          <img
+            src="Images/Numbered-Treaties-Map.svg.png"
+            alt="Map showing the numbered treaties in Canada" />
+          <figcaption>
+            <a
+              href="https://commons.wikimedia.org/wiki/File:Numbered-Treaties-Map.svg"
+              >Picture of Numbered Treaties Map</a
+            >
+          </figcaption>
+        </figure>
+        <figure>
+          <img
+            src="Images/Zoomed in treaty1.PNG"
+            alt="Zoomed-in map of Treaty 1" />
+          <figcaption>
+            <a
+              href="https://canadianhistoryworkshop.wordpress.com/treaties/treaty-one/"
+              >Picture of Treaty 1</a
+            >
+          </figcaption>
+        </figure>
+      </div>
+      <br />
+      <hr />
+      <section>
+        <h2>
+          What communications are involved, and what are their ethnic
+          affiliations or what Nations are they from?
+        </h2>
+        <p><!-- Content goes here --></p>
+      </section>
+      <br />
+      <hr />
+      <section>
+        <h2>What was included in the Treaty?</h2>
+        <p><!-- Content goes here --></p>
+      </section>
+      <br />
+      <hr />
+      <section>
+        <h2>What makes this Treaty different from other Treaties in Canada?</h2>
+        <p><!-- Content goes here --></p>
+      </section>
+      <br />
+      <hr />
+      <section>
+        <h2>How is the Treaty being implemented today?</h2>
+        <p><!-- Content goes here --></p>
+      </section>
+      <br />
+      <hr />
+    </main>
+    <footer>
+      <h2>Sources</h2>
+      <p>
+        <a
+          href="https://canadianhistoryworkshop.wordpress.com/treaties/treaty-one/"
+          >https://canadianhistoryworkshop.wordpress.com/treaties/treaty-one/</a
+        ><br />
+        <a href="https://www.metismuseum.ca/resource.php/01748"
+          >https://www.metismuseum.ca/resource.php/01748</a
+        ><br />
+        <a
+          href="https://commons.wikimedia.org/wiki/File:Numbered-Treaties-Map.svg"
+          >https://commons.wikimedia.org/wiki/File:Numbered-Treaties-Map.svg</a
+        ><br />
+      </p>
+    </footer>
+  </body>
+</html>
