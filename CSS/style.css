@@ -1,21 +1,26 @@
-/*Makes the h1 be bold, font size of 40px, and have the text in the center*/
+/* Makes the h1 be bold, font size of 40px, and have the text in the center */
 h1 {
   font-weight: bold;
   font-size: 40px;
   text-align: center;
   font-family: Arial, Helvetica, sans-serif;
 }
-/*Makes the h2 in the center and have a font size of 25px*/
+
+/* Makes the h2 in the center and have a font size of 25px */
 h2 {
   text-align: center;
   font-size: 25px;
   font-family: Georgia, "Times New Roman", Times, serif;
 }
-/*Have the body color of light blue.*/
+
+/* Have the body color of light blue. */
 body {
   background-color: rgb(186, 255, 255);
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
 }
-/*Have the lines bold, colour of black, thikness of 5px, and in the center*/
+
+/* Have the lines bold, colour of black, thickness of 5px, and in the center */
 hr {
   font-weight: bold;
   background-color: rgb(0, 0, 0);
@@ -23,13 +28,53 @@ hr {
   border: none;
   text-align: center;
 }
-/*Have the paragraphs font size 20px and have it in the center*/
+
+/* Have the paragraphs font size 20px and have it in the center */
 p {
   font-size: 20px;
   text-align: center;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  padding-left: 400px;
+  padding-right: 400px;
 }
 
 .text p {
   margin: 0; /* Removes the space between paragraphs */
+}
+
+/* Top navigation bar styles */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+  position: fixed; /* Makes the navbar always visible */
+  top: 0; /* Positions it at the top */
+  width: 100%; /* Makes it span the full width of the page */
+  z-index: 1000; /* Ensures it stays above other content */
+}
+
+/* Style for navigation links */
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Hover effect for navigation links */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Active link style */
+.topnav a.active {
+  background-color: #6d0081;
+  color: white;
+}
+
+/* Add padding to the top of the main content to account for the fixed navbar */
+main {
+  padding-top: 60px; /* Adjust this value based on the height of your navbar */
 }
