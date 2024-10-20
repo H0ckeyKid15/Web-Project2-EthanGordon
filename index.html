@@ -1,8 +1,8 @@
 <!--Name: Ethan Gordon
-Course: Web dev
+Course: Web Development
 Teacher: Ms. Hoitink
 School: PTC
-Date Last Modified: 
+Date Last Modified: Oct 20, 2024
 -->
 <!DOCTYPE html>
 <html lang="en">
@@ -11,8 +11,9 @@ Date Last Modified:
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home</title>
+    <!--In this style, I make my website more interesting with margins, font sizes, some colors, and more. 
+    I did not add this to my external CSS because it was only for this webpage.-->
     <style>
-
       .content {
         display: flex;
         flex-direction: column;
@@ -36,13 +37,13 @@ Date Last Modified:
 
       .image-container {
         display: flex;
-        justify-content: center; /* Aligns the images horizontally */
-        gap: 20px; /* Adds space between images */
-        position: relative; /* Allows absolute positioning of figcaptions */
+        justify-content: center;
+        gap: 20px;
+        position: relative;
       }
 
       .image-container figure {
-        position: relative; /* Set position for the figure */
+        position: relative;
       }
 
       .image-container img {
@@ -52,22 +53,22 @@ Date Last Modified:
 
       .image-container figcaption {
         position: absolute;
-        top: 0; /* Adjust to position above the image */
-        left: 0; /* Adjust to center horizontally */
-        right: 0; /* Stretch to the right */
-        text-align: center; /* Center the text */
-        color: white; /* Text color */
-        background: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
-        padding: 5px; /* Padding around text */
+        top: 0;
+        left: 0;
+        right: 0;
+        text-align: center;
+        color: white;
+        background: rgba(0, 0, 0, 0.7);
+        padding: 5px;
       }
 
       .skip-link {
         position: absolute;
-        left: -9999px; /* Hide off-screen */
+        left: -9999px;
       }
 
       .skip-link:focus {
-        left: 0; /* Bring into view when focused */
+        left: 0;
         top: 0;
         background: #333;
         color: white;
@@ -78,8 +79,8 @@ Date Last Modified:
   </head>
   <body>
     <a href="#main-content" class="skip-link">Skip to main content</a>
-
     <header id="site-header">
+      <!--In this nav, I put some of my navigation bar.-->
       <nav class="topnav" aria-label="Main navigation">
         <a class="active" href="index.html">Home</a>
         <a href="More.html">More</a>
@@ -91,113 +92,135 @@ Date Last Modified:
     </header>
 
     <main id="main-content">
+      <!--In this section is my title, images, and where the treaty was signed.
+      I used figures, figcaptions, divs, alt text, and more.-->
       <section>
-      <article id="treaty-location">
-        <h1>Where was the Treaty negotiated?</h1>
-        <p>The Treaty was signed at Lower Fort Garry in Manitoba.</p>
-        <p>It was signed on August 3, 1871.</p>
-        <div class="image-container">
-          <figure>
-            <img
-              src="Images/Fort gary.jfif"
-              alt="Fort Garry, a historic site in Manitoba" />
-            <figcaption>
-              <a href="https://www.metismuseum.ca/resource.php/01748"
-                >Fort Garry</a
-              >
-            </figcaption>
-          </figure>
-          <figure>
-            <img
-              src="Images/Numbered-Treaties-Map.svg.png"
-              alt="Map showing the numbered treaties in Canada" />
-            <figcaption>
-              <a
-                href="https://commons.wikimedia.org/wiki/File:Numbered-Treaties-Map.svg"
-                >Picture of Numbered Treaties Map</a
-              >
-            </figcaption>
-          </figure>
-          <figure>
-            <img
-              src="Images/Zoomed in treaty1.PNG"
-              alt="Zoomed-in map of Treaty 1" />
-            <figcaption>
-              <a
-                href="https://canadianhistoryworkshop.wordpress.com/treaties/treaty-one/"
-                >Picture of Treaty 1</a
-              >
-            </figcaption>
-          </figure>
-        </div>
-      </article>
+        <article id="treaty-location">
+          <h1>Where was the Treaty Negotiated?</h1>
+          <p>
+            The <span style="font-weight: bold; color: blue">Treaty 1</span> was
+            signed at Lower Fort Garry in Manitoba.
+          </p>
+          <p>It was signed on August 3, 1871.</p>
+          <div class="image-container">
+            <figure>
+              <img
+                src="Images/Fort gary.jfif"
+                alt="Fort Garry, a historic site in Manitoba" />
+              <figcaption>
+                <a href="https://www.metismuseum.ca/resource.php/01748"
+                  >Fort Garry</a
+                >
+              </figcaption>
+            </figure>
+            <figure>
+              <img
+                src="Images/Numbered-Treaties-Map.svg.png"
+                alt="Map showing the numbered treaties in Canada" />
+              <figcaption>
+                <a
+                  href="https://commons.wikimedia.org/wiki/File:Numbered-Treaties-Map.svg"
+                  >Picture of Numbered Treaties Map</a
+                >
+              </figcaption>
+            </figure>
+            <figure>
+              <img
+                src="Images/Zoomed in treaty1.PNG"
+                alt="Zoomed-in map of Treaty 1" />
+              <figcaption>
+                <a
+                  href="https://canadianhistoryworkshop.wordpress.com/treaties/treaty-one/"
+                  >Picture of Treaty 1</a
+                >
+              </figcaption>
+            </figure>
+          </div>
+        </article>
       </section>
 
       <br />
       <hr />
-<section>
-      <article id="communities-ethnic-affiliations">
-        <h2>Communities and Ethnic Affiliations</h2>
-        <p>
-          In Canada, multiple communities are involved in treaties, especially
-          Indigenous groups. For example, the Treaty 1 area includes First
-          Nations like the Anishinaabe, Cree, and Dakota people. These groups
-          have different cultural backgrounds but share a common history in
-          their relationship with the land.
-        </p>
-      </article>
-</section>
+      <!--In this section, I researched the communities and ethnic affiliations history of Treaty 1.
+      I used span style to make it bold, italic, and the color green. The rest was in CSS. -->
+      <section>
+        <article id="communities-ethnic-affiliations">
+          <h2>Communities and Ethnic Affiliations</h2>
+          <p>
+            In Canada, multiple communities are involved in treaties, especially
+            <span style="color: green">Indigenous groups</span>. For example,
+            the <span style="font-style: italic">Treaty 1</span> area includes
+            <span style="font-weight: bold">First Nations</span> like the
+            Anishinaabe, Cree, and Dakota people. These groups have different
+            cultural backgrounds but share a common history in their
+            relationship with the land.
+          </p>
+        </article>
+      </section>
 
       <br />
       <hr />
-<sections>
-      <article id="historic-terms">
-        <h2>Historic Terms of the Treaty</h2>
-        <p>
-          Treaties often included important promises and details about land. In
-          Treaty 1, for instance, the government promised certain benefits like
-          education, health care, and reserves for the Indigenous communities.
-          Families were given land, usually about 160 acres for every family of
-          five. The treaties also promised hunting and fishing rights on
-          traditional lands.
-        </p>
-      </article>
-</sections>
+      <!--In this section, I researched the history of Treaty 1.
+      I used span style to make it bold and the rest was in CSS. -->
+      <section>
+        <article id="historic-terms">
+          <h2>Historic Terms of the Treaty</h2>
+          <p>
+            Treaties often included important promises and details about land.
+            In <span style="font-weight: bold">Treaty 1</span>, for instance,
+            the government promised certain benefits like education, health
+            care, and reserves for the
+            <span style="font-weight: bold">Indigenous communities</span>.
+            Families were given land, usually about 160 acres for every family
+            of five. The treaties also promised hunting and fishing rights on
+            traditional lands.
+          </p>
+        </article>
+      </section>
       <br />
       <hr />
-<section>
-      <article id="treaty-differences">
-        <h2>What Makes This Treaty Different</h2>
-        <p>
-          Treaty 1 is important because it was one of the first treaties signed
-          in Canada. It set an example for future treaties and involved the
-          government recognizing Indigenous rights in an agreement. Unlike some
-          treaties that were later negotiated, Treaty 1 aimed to establish a
-          relationship based on respect. Ensuring that these have been followed
-          has often been problematic.
-        </p>
-      </article>
-</section>
+      <!--In this section, I researched about what makes this treaty different.
+      I used span style to make it bold and the rest was in CSS. -->
+      <section>
+        <article id="treaty-differences">
+          <h2>What Makes This Treaty Different</h2>
+          <p>
+            <span style="font-weight: bold">Treaty 1</span> is important because
+            it was one of the first treaties signed in Canada. It set an example
+            for future treaties and involved the government recognizing
+            <span style="font-weight: bold">Indigenous rights</span> in an
+            agreement. Unlike some treaties that were later negotiated,
+            <span style="font-weight: bold">Treaty 1</span> aimed to establish a
+            relationship based on respect. Ensuring that these have been
+            followed has often been problematic.
+          </p>
+        </article>
+      </section>
       <br />
       <hr />
-<sectons>
-      <article id="implementation-today">
-        <h2>Implementation Today</h2>
-        <p>
-          Today, Treaty 1 communities are working on applying the terms of the
-          treaty. This includes creating urban reserves, like Kapyong Urban
-          Reserve, which allows First Nations to develop land inside cities for
-          economic purposes. Communities are also involved in businesses such as
-          gas stations and cultural centers. Economic development is essential
-          for these communities, helping to support their members and ensure a
-          better future while honoring the treaty agreements.
-        </p>
-      </article>
-</sectons>
+      <!--In this section and article, I researched about the implementation.
+      I used span style to make it bold and the rest was in CSS.-->
+      <section>
+        <article id="implementation-today">
+          <h2>Implementation Today</h2>
+          <p>
+            Today,
+            <span style="font-weight: bold">Treaty 1 communities</span> are
+            working on applying the terms of the treaty. This includes creating
+            urban reserves, like Kapyong Urban Reserve, which allows
+            <span style="font-weight: bold">First Nations</span> to develop land
+            inside cities for economic purposes. Communities are also involved
+            in businesses such as gas stations and cultural centers. Economic
+            development is essential for these communities, helping to support
+            their members and ensure a better future while honoring the treaty
+            agreements.
+          </p>
+        </article>
+      </section>
       <br />
       <hr />
     </main>
-
+    <!--In this footer are all my links for sources.-->
     <footer>
       <h2>Sources</h2>
       <p>
@@ -213,19 +236,19 @@ Date Last Modified:
           >https://commons.wikimedia.org/wiki/File:Numbered-Treaties-Map.svg</a
         ><br />
         <a
-          href="https://www.rcaanc-cirnac.gc.ca/eng/1100100028574/1529354437231 "
-          >https://www.rcaanc-cirnac.gc.ca/eng/1100100028574/1529354437231 </a
+          href="https://www.rcaanc-cirnac.gc.ca/eng/1100100028574/1529354437231"
+          >https://www.rcaanc-cirnac.gc.ca/eng/1100100028574/1529354437231</a
         ><br />
         <a
-          href="https://www.thecanadianencyclopedia.ca/en/article/treaties-1-and-2  "
-          >https://www.thecanadianencyclopedia.ca/en/article/treaties-1-and-2 </a
+          href="https://www.thecanadianencyclopedia.ca/en/article/treaties-1-and-2"
+          >https://www.thecanadianencyclopedia.ca/en/article/treaties-1-and-2</a
         ><br />
-        <a href="https://www.mhs.mb.ca/docs/events/treaty1.shtml "
-          >https://www.mhs.mb.ca/docs/events/treaty1.shtml </a
+        <a href="https://www.mhs.mb.ca/docs/events/treaty1.shtml"
+          >https://www.mhs.mb.ca/docs/events/treaty1.shtml</a
         ><br />
         <a
-          href="https://parks.canada.ca/lhn-nhs/mb/fortgarry/activ/traite-treaty "
-          >https://parks.canada.ca/lhn-nhs/mb/fortgarry/activ/traite-treaty </a
+          href="https://parks.canada.ca/lhn-nhs/mb/fortgarry/activ/traite-treaty"
+          >https://parks.canada.ca/lhn-nhs/mb/fortgarry/activ/traite-treaty</a
         ><br />
       </p>
       <p>W3 Schools</p>
