@@ -1,7 +1,12 @@
+/* 
+I chose the pastel family color because I was going for a warm light mode design because of all the text. 
+Also the indigenous is about the land so I chose bright colours.
+*/
+
 /* Makes the h1 bold, with a font size of 40px, and centers the text */
 h1 {
   font-weight: bold;
-  font-size: 40px;
+  font-size: 5rem;
   text-align: center;
   font-family: Arial, Helvetica, sans-serif;
 }
@@ -10,14 +15,17 @@ h1 {
 h2 {
   text-align: center;
   font-size: 25px;
-  font-family: Georgia, "Times New Roman", Times, serif;
+  font-family: Georgia, "Times New Roman", Times, sans-serif;
 }
 
 /* Sets the body background color to light blue */
 body {
-  background-color: rgb(186, 255, 255);
+  background-color: #fff0db;
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.6rem;
+  line-height: 140%;
+  word-spacing: 10%;
 }
 
 /* Styles horizontal lines to be bold, black, 5px thick, and centered */
@@ -33,7 +41,7 @@ hr {
 p {
   font-size: 20px;
   text-align: center;
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", sans-serif;
   padding-left: 400px;
   padding-right: 400px;
 }
@@ -55,26 +63,37 @@ p {
 /* Style for navigation links */
 .topnav a {
   float: left;
-  color: #f2f2f2;
+  color: black; /* Text color for links */
+  background-color: #c8ffcc; /* Applies the family color as background */
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
   font-size: 17px;
 }
 
-/* Hover effect for navigation links */
-.topnav a:hover {
-  background-color: #ddd;
-  color: black;
-}
-
 /* Active link style */
 .topnav a.active {
-  background-color: #6d0081;
-  color: white;
+  background-color: #fabff5;
+  color: black;
 }
 
 /* Adds padding to the top of the main content to account for the fixed navbar */
 main {
-  padding-top: 60px; /* Adjust this value based on the height of your navbar */
+  padding-top: 60px;
+}
+
+.text {
+  margin-bottom: 20px;
+}
+
+.text h1 {
+  margin: 0;
+  font-size: 24px;
+}
+
+.text p {
+  margin-top: 10px;
+}
+html {
+  font-size: 62.5%;
 }

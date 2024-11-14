@@ -2,11 +2,12 @@
 Course: Web Development
 Teacher: Ms. Hoitink
 School: PTC
-Date Last Modified: Oct 20, 2024
+Date Last Modified: NOV 14, 2024
 -->
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!--Links the external css-->
     <link rel="stylesheet" href="CSS/style.css" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -14,7 +15,22 @@ Date Last Modified: Oct 20, 2024
     <!--In this style, I make my website more interesting with margins, font sizes, some colors, and more. 
     I did not add this to my external CSS because it was only for this webpage.-->
     <style>
-      .content {
+      /* Active link style */
+      .topnav a.active {
+        background-color: #c8ffcc;
+        color: black;
+      }
+      /* Style for navigation links */
+      .topnav a {
+        float: left;
+        color: black; /* Text color for links */
+        background-color: #fabff5; /* Applies the family color as background */
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+      }
+      #content {
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -22,36 +38,23 @@ Date Last Modified: Oct 20, 2024
         text-align: center;
       }
 
-      .text {
-        margin-bottom: 20px;
-      }
-
-      .text h1 {
-        margin: 0;
-        font-size: 24px;
-      }
-
-      .text p {
-        margin-top: 10px;
-      }
-
-      .image-container {
+      #image-container {
         display: flex;
         justify-content: center;
         gap: 20px;
         position: relative;
       }
 
-      .image-container figure {
+      #image-container figure {
         position: relative;
       }
 
-      .image-container img {
+      #image-container img {
         width: 300px;
         height: 250px;
       }
 
-      .image-container figcaption {
+      #image-container figcaption {
         position: absolute;
         top: 0;
         left: 0;
@@ -62,12 +65,12 @@ Date Last Modified: Oct 20, 2024
         padding: 5px;
       }
 
-      .skip-link {
+      #skip-link {
         position: absolute;
         left: -9999px;
       }
 
-      .skip-link:focus {
+      #skip-link:focus {
         left: 0;
         top: 0;
         background: #333;
@@ -78,16 +81,16 @@ Date Last Modified: Oct 20, 2024
     </style>
   </head>
   <body>
-    <a href="#main-content" class="skip-link">Skip to main content</a>
+    <a href="#main-content" id="skip-link">Skip to main content</a>
     <header id="site-header">
       <!--In this nav, I put some of my navigation bar.-->
       <nav class="topnav" aria-label="Main navigation">
         <a class="active" href="index.html">Home</a>
-        <a href="More.html">More</a>
+        <a href="HeritageAndPromise.html">Heritage and Promise</a>
       </nav>
       <br />
       <br />
-      <h1 style="text-align: center">Treaty 1</h1>
+      <h1 style="text-align: center; color: blue">Treaty 1</h1>
       <hr />
     </header>
 
@@ -98,11 +101,12 @@ Date Last Modified: Oct 20, 2024
         <article id="treaty-location">
           <h1>Where was the Treaty Negotiated?</h1>
           <p>
-            The <span style="font-weight: bold; color: blue">Treaty 1</span> was
+            The
+            <span style="color: blue; font-weight: bold">Treaty 1 </span> was
             signed at Lower Fort Garry in Manitoba.
           </p>
           <p>It was signed on August 3, 1871.</p>
-          <div class="image-container">
+          <div id="image-container">
             <figure>
               <img
                 src="Images/Fort gary.jfif"
@@ -141,84 +145,6 @@ Date Last Modified: Oct 20, 2024
 
       <br />
       <hr />
-      <!--In this section, I researched the communities and ethnic affiliations history of Treaty 1.
-      I used span style to make it bold, italic, and the color green. The rest was in CSS. -->
-      <section>
-        <article id="communities-ethnic-affiliations">
-          <h2>Communities and Ethnic Affiliations</h2>
-          <p>
-            In Canada, multiple communities are involved in treaties, especially
-            <span style="color: green">Indigenous groups</span>. For example,
-            the <span style="font-style: italic">Treaty 1</span> area includes
-            <span style="font-weight: bold">First Nations</span> like the
-            Anishinaabe, Cree, and Dakota people. These groups have different
-            cultural backgrounds but share a common history in their
-            relationship with the land.
-          </p>
-        </article>
-      </section>
-
-      <br />
-      <hr />
-      <!--In this section, I researched the history of Treaty 1.
-      I used span style to make it bold and the rest was in CSS. -->
-      <section>
-        <article id="historic-terms">
-          <h2>Historic Terms of the Treaty</h2>
-          <p>
-            Treaties often included important promises and details about land.
-            In <span style="font-weight: bold">Treaty 1</span>, for instance,
-            the government promised certain benefits like education, health
-            care, and reserves for the
-            <span style="font-weight: bold">Indigenous communities</span>.
-            Families were given land, usually about 160 acres for every family
-            of five. The treaties also promised hunting and fishing rights on
-            traditional lands.
-          </p>
-        </article>
-      </section>
-      <br />
-      <hr />
-      <!--In this section, I researched about what makes this treaty different.
-      I used span style to make it bold and the rest was in CSS. -->
-      <section>
-        <article id="treaty-differences">
-          <h2>What Makes This Treaty Different</h2>
-          <p>
-            <span style="font-weight: bold">Treaty 1</span> is important because
-            it was one of the first treaties signed in Canada. It set an example
-            for future treaties and involved the government recognizing
-            <span style="font-weight: bold">Indigenous rights</span> in an
-            agreement. Unlike some treaties that were later negotiated,
-            <span style="font-weight: bold">Treaty 1</span> aimed to establish a
-            relationship based on respect. Ensuring that these have been
-            followed has often been problematic.
-          </p>
-        </article>
-      </section>
-      <br />
-      <hr />
-      <!--In this section and article, I researched about the implementation.
-      I used span style to make it bold and the rest was in CSS.-->
-      <section>
-        <article id="implementation-today">
-          <h2>Implementation Today</h2>
-          <p>
-            Today,
-            <span style="font-weight: bold">Treaty 1 communities</span> are
-            working on applying the terms of the treaty. This includes creating
-            urban reserves, like Kapyong Urban Reserve, which allows
-            <span style="font-weight: bold">First Nations</span> to develop land
-            inside cities for economic purposes. Communities are also involved
-            in businesses such as gas stations and cultural centers. Economic
-            development is essential for these communities, helping to support
-            their members and ensure a better future while honoring the treaty
-            agreements.
-          </p>
-        </article>
-      </section>
-      <br />
-      <hr />
     </main>
     <!--In this footer are all my links for sources.-->
     <footer>
@@ -252,6 +178,9 @@ Date Last Modified: Oct 20, 2024
         ><br />
       </p>
       <p>W3 Schools</p>
+      <br />
+      <br />
+      <p>&#169;Ethan Gordon</p>
     </footer>
   </body>
 </html>
