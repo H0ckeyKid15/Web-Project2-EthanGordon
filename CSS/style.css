@@ -20,7 +20,7 @@ h2 {
   font-family: Georgia, "Times New Roman", Times, sans-serif;
 }
 
-/* Sets the body background color to light blue */
+/* Sets the body background color to light blue, uses sans-serif, good use of rem, line height, and word spacing. */
 body {
   background-color: #fff0db;
   margin: 0;
