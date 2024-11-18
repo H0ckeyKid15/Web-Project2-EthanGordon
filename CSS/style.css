@@ -85,17 +85,18 @@ main {
 }
 
 .text {
-  margin-bottom: 20px;
+  margin-bottom: 20px; /* Makes text margin */
 }
 
 .text h1 {
-  margin: 0;
-  font-size: 24px;
+  margin: 0;/* Makes text h1 margins */
+  font-size: 24px; /* Changes font size */
+
 }
 
 .text p {
-  margin-top: 10px;
+  margin-top: 10px; /* Makes text p margins */
 }
 html {
-  font-size: 62.5%;
+  font-size: 62.5%; /* Makes html font size */
 }
