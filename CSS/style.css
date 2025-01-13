@@ -100,3 +100,18 @@ main {
 html {
   font-size: 62.5%; /* Makes html font size */
 }
+      /* Active link style */
+      .topnav a.active {
+        background-color: #c8ffcc;
+        color: black;
+      }
+      /* Style for navigation links */
+      .topnav a {
+        float: left;
+        color: black; /* Text color for links */
+        background-color: #fabff5; /* Applies the family color as background */
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+      }
